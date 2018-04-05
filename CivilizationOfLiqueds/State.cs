@@ -15,12 +15,35 @@ namespace CivilizationOfLiquides
             //l.CurrentState = new State();
         }
     }
+    class TurnToDark : IState
+    {
+        public void ChangeState(Liquides l)
+        {
+            throw new NotImplementedException();
+        }
+    }
+    //----------------------------
+    class StartOfSeason : IState
+    {
+        public void ChangeState(Liquides l)
+        {
+            throw new NotImplementedException();
+        }
+    }
     class Continue : IState
     {
         public void ChangeState(Liquides l)
         {
             l.Population -= (long)(l.Population * 5);//5% die
-
+//time
         }
     }
+    class EndOfSeason : IState        
+    {
+        public void ChangeState(Liquides l)
+        {
+            //l.CurrentState = new State();
+        }
+    }
+    
 }
