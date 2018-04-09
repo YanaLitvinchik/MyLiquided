@@ -4,22 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //c.CurrentState = new ContinueWar();
+
 namespace CivilizationOfLiquides
-{    
-    class TurnToSun : IState
+{
+   
+    class TurnToSun : IState//умирают  с вероятностью от 20 - 30 %
     {
+        static protected Random r = new Random();
         public void ChangeState(Liquides l)
-        {
-            Random r = new Random();
-            l.Population -= (long)(l.Population * r.Next(20, 30));
-            //l.CurrentState = new State();
+        {           
+            l.Population -= (long)(l.Population * (r.Next(20, 30)/100));
+            l.CurrentState = new Continue();
         }
     }
     class TurnToDark : IState
     {
+        static protected Random r = new Random();
         public void ChangeState(Liquides l)
         {
-            throw new NotImplementedException();
+            l.Population += (long)(l.Population * (r.Next(20, 50) / 100));
+            l.CurrentState = new Continue();
         }
     }
     //----------------------------

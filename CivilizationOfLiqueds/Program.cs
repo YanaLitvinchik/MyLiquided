@@ -8,10 +8,11 @@ namespace CivilizationOfLiquides
 {
     class Program
     {
-        
+        static protected Random r = new Random();
+
         static void Main(string[] args)
         {
-
+           
         }
     }
 }
