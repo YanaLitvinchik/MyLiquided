@@ -9,5 +9,6 @@ namespace CivilizationOfLiquides
     interface IState
     {
         void ChangeState(Liquides l);
+        void Print(Liquides l);
     }
 }

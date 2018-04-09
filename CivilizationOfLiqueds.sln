@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CivilizationOfLiqueds", "CivilizationOfLiqueds\CivilizationOfLiqueds.csproj", "{B7BAA38D-7EF5-49D1-8FF7-C147AAF49E40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Civilization", "..\..\..\Desktop\homework\домашка С#\civic\civic\Civilization\Civilization\Civilization.csproj", "{5AA5F25F-F41E-42E2-84F8-3420DD53B3D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{B7BAA38D-7EF5-49D1-8FF7-C147AAF49E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7BAA38D-7EF5-49D1-8FF7-C147AAF49E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7BAA38D-7EF5-49D1-8FF7-C147AAF49E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA5F25F-F41E-42E2-84F8-3420DD53B3D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA5F25F-F41E-42E2-84F8-3420DD53B3D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA5F25F-F41E-42E2-84F8-3420DD53B3D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA5F25F-F41E-42E2-84F8-3420DD53B3D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44E862E9-E0B2-4EF0-8581-F8D11407F704}
 	EndGlobalSection
 EndGlobal

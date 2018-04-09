@@ -11,6 +11,5 @@ namespace CivilizationOfLiquides
         public long Population { get; set; }
         public long TimeChanging { get; set; }
         public IState CurrentState { get; set; }
-
     }
 }
