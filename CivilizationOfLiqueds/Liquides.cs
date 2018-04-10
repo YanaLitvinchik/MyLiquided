@@ -8,8 +8,20 @@ namespace CivilizationOfLiquides
 {
     class Liquides
     {
-        public long Population { get; set; }
-        public long TimeChanging { get; set; }
+        public long Population { get; set; }      
         public IState CurrentState { get; set; }
+        public Liquides()
+        {
+            CurrentState = new StartOfSeason();
+            Population = 1234567;
+        }
+        public void Create()
+        {
+            StartOfSeason();
+        }
+        void Create()
+        {
+            CurrentState.ChangeState(this);
+        }
     }
 }
