@@ -15,7 +15,7 @@ namespace CivilizationOfLiquides
             l.Population -= (long)(l.Population * (Program.r.Next(20, 30)/100));
             l.CurrentState = new Continue();
         }
-       
+       //
         void IState.Print(Liquides l)
         {
             Console.WriteLine( $"\nTurn to sun.\n Current population : {l.Population}");
