@@ -10,15 +10,16 @@ namespace CivilizationOfLiquides
     class TurnToSun : IState//death 20 - 30% 
     {       
         public void ChangeState(Liquides l)
-        {           
-            l.Population -= (long)(l.Population * (Program.r.Next(20, 30)/100));
+        {
+            l.Population -= (long)(l.Population * (Program.r.Next(20, 30) / 100));
             l.CurrentState = new Continue();
         }
        
-        void IState.Print(Liquides l)
+        public void Print(Liquides l)
         {
-            Console.WriteLine( $"\nTurn to sun.\n Current population : {l.Population}");
+            Console.WriteLine( $"\nTurn to sun.\nCurrent population : {l.Population}");
         }
+        
     }
     class TurnToDark : IState // new liquides are born
     {
@@ -31,8 +32,9 @@ namespace CivilizationOfLiquides
 
         public void Print(Liquides l)
         {
-            Console.WriteLine($"\nTurn from sun.\n Current population : {l.Population}");
-        }
+            Console.WriteLine($"\nTurn from sun.\nCurrent population : {l.Population}");
+        }      
+
     }
     //----------------------------
     class StartOfSeason : IState // the first day of the season : when all liquides are multiply their population
@@ -40,7 +42,11 @@ namespace CivilizationOfLiquides
         public void ChangeState(Liquides l)
         {
             for (int i = 0; i < 14; i++)
-                l.CurrentState = new TurnToDark();           
+            {
+                l.CurrentState = new TurnToDark();
+            }
+                Print(l);
+    
         }
         public void Print(Liquides l)
         {
@@ -60,7 +66,7 @@ namespace CivilizationOfLiquides
 
         public void Print(Liquides l)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Continue");
         }
     }
     class EndOfSeason : IState        

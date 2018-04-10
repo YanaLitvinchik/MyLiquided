@@ -13,15 +13,16 @@ namespace CivilizationOfLiquides
         public Liquides()
         {
             CurrentState = new StartOfSeason();
-            Population = 1234567;
+            Population = 1000;
         }
         public void Create()
         {
-            StartOfSeason();
+            StepOne();
         }
-        void Create()
+        void StepOne()
         {
             CurrentState.ChangeState(this);
+            CurrentState.Print(this);
         }
     }
 }

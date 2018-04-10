@@ -11,7 +11,18 @@ namespace CivilizationOfLiquides
         static public Random r = new Random();
         static void Main(string[] args)
         {
-           
+            Liquides l = new Liquides();
+            l.Create();            
+            l.Create();
+            
+            l.Create();
+            l.Create();
+            l.Create();
+            l.Create();
+            l.Create();
+            l.Create();
+            l.Create();
+            l.Create();
         }
     }
 }
