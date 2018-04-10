@@ -9,11 +9,10 @@ namespace CivilizationOfLiquides
 {
    
     class TurnToSun : IState//death 20 - 30% 
-    {
-        internal Random r = new Random();
+    {       
         public void ChangeState(Liquides l)
         {           
-            l.Population -= (long)(l.Population * (r.Next(20, 30)/100));
+            l.Population -= (long)(l.Population * (Program.r.Next(20, 30)/100));
             l.CurrentState = new Continue();
         }
        

@@ -8,7 +8,7 @@ namespace CivilizationOfLiquides
 {
     class Program
     {
-        internal Random r = new Random();
+        static public Random r = new Random();
         static void Main(string[] args)
         {
            
