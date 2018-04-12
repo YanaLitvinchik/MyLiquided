@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CivilizationOfLiquides
+namespace CivilizationOfLiqueds
 {
     class Program
     {
@@ -13,16 +13,9 @@ namespace CivilizationOfLiquides
         {
             Liquides l = new Liquides();
             l.Create();            
+            l.Create();            
             l.Create();
             
-            l.Create();
-            l.Create();
-            l.Create();
-            l.Create();
-            l.Create();
-            l.Create();
-            l.Create();
-            l.Create();
         }
     }
 }

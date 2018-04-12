@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CivilizationOfLiquides
+namespace CivilizationOfLiqueds
 {
     class Liquides
     {
@@ -17,12 +17,17 @@ namespace CivilizationOfLiquides
         }
         public void Create()
         {
-            StepOne();
+            for (int i = 0; i < 10; i++)
+            {
+                StepOne();
+                //Population > 1000000;  
+            }
         }
         void StepOne()
         {
             CurrentState.ChangeState(this);
             CurrentState.Print(this);
         }
+       
     }
 }

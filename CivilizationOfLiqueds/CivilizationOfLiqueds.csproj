@@ -43,15 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IState.cs" />
-    <Compile Include="Liquides.cs" />
+    <Compile Include="Destroy\Crash.cs" />
+    <Compile Include="States\ContinueDark.cs" />
+    <Compile Include="States\ContinueSun.cs" />
+    <Compile Include="States\EndOfSeasonDark.cs" />
+    <Compile Include="States\EndOfSeasonSun.cs" />
+    <Compile Include="States\IState.cs" />
+    <Compile Include="Engine\Liquides.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="State.cs" />
+    <Compile Include="States\StartOfSeason.cs" />
+    <Compile Include="States\TurnToDark.cs" />
+    <Compile Include="States\TurnToSun.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
