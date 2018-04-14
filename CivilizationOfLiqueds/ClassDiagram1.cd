@@ -1,16 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="CivilizationOfLiqueds.TurnToDark" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+  <Class Name="CivilizationOfLiqueds.Crash" Collapsed="true">
+    <Position X="10.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Destroy\Crash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CivilizationOfLiqueds.Liquides">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAACAAAAAAAEAAAAAAAgAAAAA=</HashCode>
+      <FileName>Engine\Liquides.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CivilizationOfLiqueds.ContinueDark" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>States\TurnToDark.cs</FileName>
-      <NewMemberFileName>States\State.cs</NewMemberFileName>
+      <FileName>States\ContinueDark.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="CivilizationOfLiqueds.StartOfSeason" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+  <Class Name="CivilizationOfLiqueds.ContinueSun" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>States\ContinueSun.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CivilizationOfLiqueds.EndOfSeasonDark" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>States\EndOfSeasonDark.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CivilizationOfLiqueds.EndOfSeasonSun" Collapsed="true">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>States\EndOfSeasonSun.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CivilizationOfLiqueds.GenerateRandomMethod" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>States\IState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CivilizationOfLiqueds.StartOfSeason" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>States\StartOfSeason.cs</FileName>
@@ -18,50 +62,50 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="CivilizationOfLiqueds.Program" Collapsed="true">
-    <Position X="11.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CivilizationOfLiqueds.Liquides">
-    <Position X="8" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAIAAAAACAAAAAAAEAAAAAAAgAAAAA=</HashCode>
-      <FileName>Engine\Liquides.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="CivilizationOfLiqueds.EndOfSeasonDark" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+  <Class Name="CivilizationOfLiqueds.TurnToDark" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>States\EndOfSeasonDark.cs</FileName>
+      <FileName>States\TurnToDark.cs</FileName>
+      <NewMemberFileName>States\State.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="CivilizationOfLiqueds.ContinueSun" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="CivilizationOfLiqueds.TurnToSun" Collapsed="true">
     <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>States\ContinueSun.cs</FileName>
+      <FileName>States\TurnToSun.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="CivilizationOfLiqueds.ContinueDark" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="CivilizationOfLiqueds.Program" Collapsed="true">
+    <Position X="15" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
-      <FileName>States\ContinueDark.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="CivilizationOfLiqueds.IState">
-    <Position X="11.5" Y="1.5" Width="1.5" />
+  <Class Name="CivilizationOfLiqueds.Invasion">
+    <Position X="10.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAABAgAAAAAA=</HashCode>
+      <FileName>Engine\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CivilizationOfLiqueds.IState" Collapsed="true">
+    <Position X="15" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>States\IState.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Delegate Name="CivilizationOfLiqueds.MessageExtraterrestrial" Collapsed="true">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Message.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

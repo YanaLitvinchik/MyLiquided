@@ -13,15 +13,25 @@ namespace CivilizationOfLiqueds
         public Liquides()
         {
             CurrentState = new StartOfSeason();
-            Population = 1000;
+            Population = 2000;
         }
-        public void Create()
+        public void Create(Liquides l)
         {
-            for (int i = 0; i < 10; i++)
+            int count = 0;
+            int year = 150;
+            Invasion invation = new Invasion();            
+            for (int i = 0; i < year; i++)
             {
-                StepOne();
-                //Population > 1000000;  
+                if (invation.Catch(l) == false)                
+                    StepOne();                
+                else
+                {
+                    Crash.Destroy(l);
+                    StepOne();
+                    count++;
+                }
             }
+            Console.WriteLine($"\nWere {count} invansions for {year} years");
         }
         void StepOne()
         {

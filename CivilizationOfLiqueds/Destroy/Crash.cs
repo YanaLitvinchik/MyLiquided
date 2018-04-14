@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CivilizationOfLiqueds
 {
-    public class Crash//if population more than 1 000 000 
+    public class Crash                                                       //if population more than 1 000 000 
     {
-        public static int Destroy()
+        internal static void Destroy(Liquides l)
         {
-            return 0;
-        }
+            Console.WriteLine("-------------------------------------------------------------NAPALI INOPLANETNIE PEOPLE");
+            l.Population -= (long)(l.Population * GenerateRandomMethod.GenerateRandom(80,90));
+        }        
     }
 }

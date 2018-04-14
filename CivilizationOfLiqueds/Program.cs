@@ -8,13 +8,13 @@ namespace CivilizationOfLiqueds
 {
     class Program
     {
-        static public Random r = new Random();
+        static public Random random = new Random();
         static void Main(string[] args)
         {
             Liquides l = new Liquides();
-            l.Create();            
-            l.Create();            
-            l.Create();
+            l.Create(l);            
+            l.Create(l);            
+            l.Create(l);
             
         }
     }

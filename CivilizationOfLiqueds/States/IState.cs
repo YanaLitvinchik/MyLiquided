@@ -12,11 +12,11 @@ namespace CivilizationOfLiqueds
         void Print(Liquides l);
     }
 
-    public class Metherology
+    public class GenerateRandomMethod
     {
         public static double GenerateRandom(int start, int end)
         {
-            return Program.r.Next(start, end) / 100.0;
+            return Program.random.Next(start, end) / 100.0;
         }
     }
 

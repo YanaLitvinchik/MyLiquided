@@ -10,7 +10,9 @@ namespace CivilizationOfLiqueds
     {
         public void ChangeState(Liquides l)
         {
-            l.Population -= (long)(l.Population * Metherology.GenerateRandom(20,30));
+            if (l.Population < 5)
+                l.Population += 10;
+            l.Population -= (long)(l.Population * GenerateRandomMethod.GenerateRandom(30,35));
             l.CurrentState = new ContinueSun();
         }
         public void Print(Liquides l)

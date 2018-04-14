@@ -10,7 +10,7 @@ namespace CivilizationOfLiqueds
     {
         public void ChangeState(Liquides l)
         {
-            l.Population -= ((long)(l.Population * Metherology.GenerateRandom(1, 7)));
+            l.Population -= (long)(l.Population * GenerateRandomMethod.GenerateRandom(1, 7));
             l.CurrentState = new EndOfSeasonSun();
         }
 

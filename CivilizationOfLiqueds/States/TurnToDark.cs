@@ -10,7 +10,7 @@ namespace CivilizationOfLiqueds
     {
         public void ChangeState(Liquides l)
         {
-            l.Population += (long)(l.Population * Metherology.GenerateRandom(20, 26));
+            l.Population += (long)(l.Population * GenerateRandomMethod.GenerateRandom(50, 65));
             l.CurrentState = new ContinueDark();
         }
 

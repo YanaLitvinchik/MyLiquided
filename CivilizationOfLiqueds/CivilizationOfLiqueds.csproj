@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Destroy\Crash.cs" />
+    <Compile Include="Engine\Message.cs" />
     <Compile Include="States\ContinueDark.cs" />
     <Compile Include="States\ContinueSun.cs" />
     <Compile Include="States\EndOfSeasonDark.cs" />
