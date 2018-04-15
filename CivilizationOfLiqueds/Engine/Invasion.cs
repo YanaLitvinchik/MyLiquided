@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CivilizationOfLiqueds
 {
     public delegate void MessageExtraterrestrial();//extraterrestrial - пришелец
-    internal class Invasion // вторжение//home
+    internal class Invasion // вторжение
     {
         public event MessageExtraterrestrial Alarm;
         protected virtual void OnInvasion(Liquides l)

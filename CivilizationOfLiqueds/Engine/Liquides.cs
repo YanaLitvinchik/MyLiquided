@@ -11,6 +11,7 @@ namespace CivilizationOfLiqueds
         public long Population { get; set; }      
         public IState CurrentState { get; set; }
         public int Year { get; set; }
+        public String Genius { get; set; }
 
         public Liquides()
         {

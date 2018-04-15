@@ -14,7 +14,10 @@ namespace CivilizationOfLiqueds
             Liquides l = new Liquides();
             l.Create(l);     
             l.Create(l);
-
+            l.Create(l);
+            l.Create(l);
+            l.Create(l);
+            l.Create(l);
         }
     }
 }
