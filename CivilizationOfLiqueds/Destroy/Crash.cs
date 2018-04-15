@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace CivilizationOfLiqueds
 {
-    public class Crash                                                       //if population more than 1 000 000 
+    internal class Crash //if population more than 1 000 000 
     {
-        internal static void Destroy(Liquides l)
+        internal void Destroy(Liquides l)
         {
-            Console.WriteLine("-------------------------------------------------------------NAPALI INOPLANETNIE PEOPLE");
             l.Population -= (long)(l.Population * GenerateRandomMethod.GenerateRandom(80,90));
-        }        
+        }
+        internal void DestroyCompletely()
+        {
+            string str = "extraterrestrialses attacked";
+            Console.WriteLine($"------------------------------{str.ToUpper()}");
+        }
     }
 }

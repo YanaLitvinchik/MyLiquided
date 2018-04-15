@@ -12,10 +12,9 @@ namespace CivilizationOfLiqueds
         static void Main(string[] args)
         {
             Liquides l = new Liquides();
-            l.Create(l);            
-            l.Create(l);            
+            l.Create(l);     
             l.Create(l);
-            
+
         }
     }
 }

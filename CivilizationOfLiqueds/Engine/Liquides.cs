@@ -10,28 +10,29 @@ namespace CivilizationOfLiqueds
     {
         public long Population { get; set; }      
         public IState CurrentState { get; set; }
+        public int Year { get; set; }
+
         public Liquides()
         {
             CurrentState = new StartOfSeason();
-            Population = 2000;
+            Population = 10000;
+            Year = 100;
         }
         public void Create(Liquides l)
-        {
-            int count = 0;
-            int year = 150;
-            Invasion invation = new Invasion();            
-            for (int i = 0; i < year; i++)
+        {  
+            Invasion invation = new Invasion();
+            Crash crash = new Crash();
+            for (int i = 0; i <= l.Year; i++)
             {
-                if (invation.Catch(l) == false)                
+                if (invation.CatchPop(l) == false)                
                     StepOne();                
                 else
                 {
-                    Crash.Destroy(l);
-                    StepOne();
-                    count++;
+                    crash.Destroy(l);
+                    invation.Alarm += crash.DestroyCompletely;
+                    StepOne();                   
                 }
-            }
-            Console.WriteLine($"\nWere {count} invansions for {year} years");
+            }            
         }
         void StepOne()
         {
